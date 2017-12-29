@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Eric Lucero | Home</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Eric Lucero">
+    <link rel="shortcut icon" href="media/ericlogo.png">
+    <link href="styles/css-tablas.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+</head>
+<header>
+    <h1> Tablas </h1>
+    <nav class="navi">
+        <ul>
+            <li><a href="index.html"> Home</a>
+                <ul>
+                    <li><a href="#">Eric Lucero</a></li>
+                    <li><a href="css-assesment.html">Who</a></li>
+                    <li><a href="#">Why?</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li class="active-nav"><a href="projects.html">Projects</a>
+                <ul>
+                    <li><a href="css-font.html"> Project #1 </a></li>
+                    <li><a href="table.html"> Project #2 - Table </a></li>
+                    <li><a href="#"> Project #3 </a></li>
+                </ul>
+            </li>
+            <li> <a href="pictures.html">Pictures</a></li>
+            <li><a href="social.html">Social</a></li>
+            <li><a href="tables.html"> Tables</a> </li>
+            <li><a href="cascade.html">CSS</a> </li>
+            <li><a href="animate.html">Animate</a> </li>
+            <li><a href="units.html">Units</a> </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <table summary="The most famous UK punk bands">
+        <caption>A summary of the UK's most famous punk bands</caption>
+        <thead>
+            <tr>
+                <th scope="col">Band</th>
+                <th scope="col">Year formed</th>
+                <th scope="col">No. of Albums</th>
+                <th scope="col">Most famous song</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Buzzcocks</th>
+                <td>1976</td>
+                <td>9</td>
+                <td>Ever fallen in love (with someone you shouldn't've)</td>
+            </tr>
+            <tr>
+                <th scope="row">The Clash</th>
+                <td>1976</td>
+                <td>6</td>
+                <td>London Calling</td>
+            </tr>
+            <tr>
+                <th scope="row">The Damned</th>
+                <td>1976</td>
+                <td>10</td>
+                <td>Smash it up</td>
+            </tr>
+            <tr>
+                <th scope="row">Sex Pistols</th>
+                <td>1975</td>
+                <td>1</td>
+                <td>Anarchy in the UK</td>
+            </tr>
+            <tr>
+                <th scope="row">Sham 69</th>
+                <td>1976</td>
+                <td>13</td>
+                <td>If the kids are united</td>
+            </tr>
+            <tr>
+                <th scope="row">Siouxsie and the Banshees</th>
+                <td>1976</td>
+                <td>11</td>
+                <td>Hong Kong Garden</td>
+            </tr>
+            <tr>
+                <th scope="row">Stiff Little Fingers</th>
+                <td>1977</td>
+                <td>10</td>
+                <td>Suspect Device</td>
+            </tr>
+            <tr>
+                <th scope="row">The Stranglers</th>
+                <td>1974</td>
+                <td>17</td>
+                <td>No More Heroes</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="2">Total albums</th>
+                <td colspan="2">77</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h4> Table styling quick tips </h4>
+    <ul>
+        <li>
+            Make your table markup as simple as possible, and keep things flexible, e.g. by using percentages, so the design is more responsive.</li>
+        <li>
+            Use table-layout: fixed to create a more predictable table layout that allows you to easily set column widths by setting width on their headings (th).
+        </li>
+        <li>
+            Use border-collapse: collapse to make table elements borders collapse into each other, producing a neater and easier to control look.
+        </li>
+        <li>
+            Use thead, tbody, and tfoot to break up your table into logical chunks and provide extra places to apply CSS to, so it is easier to layer styles on top of one another if required.
+        </li>
+        <li>
+            Use zebra striping to make alternative rows easier to read.
+        </li>
+        <li>
+            Use text-align to line up your th and td text, to make things neater and easier to follow.
+        </li>
+    </ul>
+
+</body>
+<footer>
+    <p>©Copyright 2050 by nobody. All rights reversed.</p>
+</footer>
+
+</html>

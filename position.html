@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tabbed info box</title>
+    <meta name="author" content="Eric Lucero">
+    <link rel="shortcut icon" href="media/ericlogo.png">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="styles/position.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/header-anima.css" rel="stylesheet" type="text/css">
+    <style>
+    </style>
+</head>
+<header>
+    <h1> Position </h1>
+    <nav class="navi">
+        <ul>
+            <li><a href="index.html"> Home</a>
+                <ul>
+                    <li><a href="#">Eric Lucero</a></li>
+                    <li><a href="#">Who</a></li>
+                    <li><a href="#">Why?</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="projects.html">Projects</a>
+                <ul>
+                    <li><a href="#"> Project #1 </a></li>
+                    <li><a href="#"> Project #2 </a></li>
+                    <li><a href="#"> Project #3 </a></li>
+                </ul>
+            </li>
+            <li> <a href="pictures.html">Pictures</a></li>
+            <li><a href="social.html">Social</a></li>
+            <li><a href="tables.html"> Tables</a> </li>
+            <li><a href="cascade.html">CSS</a> </li>
+            <li><a href="animate.html">Animate</a> </li>
+            <li><a href="units.html">Units</a>
+                <ul>
+                   <li><a href="position.html"> Positioning</a></li>
+                   <li><a href="hidden-info.html"> Hidden</a></li>                   
+                    
+                </ul>
+         </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <section class="fake-content">
+        <h3>Fake content</h3>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+    </section>
+
+    <section class="info-box">
+        <ul>
+            <li><a href="#" class="active">Tab 1</a></li>
+            <li><a href="#">Tab 2</a></li>
+            <li><a href="#">Tab 3</a></li>
+        </ul>
+        <div class="panels">
+            <article class="active-panel">
+                <h4> Tab 1</h4>
+                <h2>The first tab</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque turpis nibh, porttitor nec venenatis eu, pulvinar in augue. Vestibulum et orci scelerisque, vulputate tellus quis, lobortis dui. Vivamus varius libero at ipsum mattis efficitur ut nec nisl. Nullam eget tincidunt metus. Donec ultrices, urna maximus consequat aliquet, dui neque eleifend lorem, a auctor libero turpis at sem. Aliquam ut porttitor urna. Nulla facilisi.</p>
+            </article>
+            <article>
+                <h4> Tab 2</h4>
+                <h2>The second tab</h2>
+
+                <p>This tab hasn't got any Lorem Ipsum in it. But the content isn't very exciting all the same.</p>
+            </article>
+            <article>
+                <h4> Tab 3</h4>
+                <h2>The third tab</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque turpis nibh, porttitor nec venenatis eu, pulvinar in augue. And now an ordered list: how exciting!</p>
+
+                <ol>
+                    <li>dui neque eleifend lorem, a auctor libero turpis at sem.</li>
+                    <li>Aliquam ut porttitor urna.</li>
+                    <li>Nulla facilisi</li>
+                </ol>
+            </article>
+        </div>
+    </section>
+
+    <script>
+        var tabs = document.querySelectorAll('.info-box li a');
+        var panels = document.querySelectorAll('.info-box article');
+
+        for (i = 0; i < tabs.length; i++) {
+            var tab = tabs[i];
+            setTabHandler(tab, i);
+        }
+
+        function setTabHandler(tab, tabPos) {
+            tab.onclick = function() {
+                for (i = 0; i < tabs.length; i++) {
+                    tabs[i].className = '';
+                }
+
+                tab.className = 'active';
+
+                for (i = 0; i < panels.length; i++) {
+                    panels[i].className = '';
+                }
+
+                panels[tabPos].className = 'active-panel';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

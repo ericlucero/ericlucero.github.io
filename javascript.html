@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <meta name="author" content="Eric Lucero">
+    <link rel="shortcut icon" href="media/ericlogo.png">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/header-anima.css" rel="stylesheet" type="text/css">
+    <link href="styles/javascript.css" rel="stylesheet" type="text/css">
+    <style>
+    </style>
+</head>
+<header>
+    <h1> JavaScript </h1>
+    <nav class="navi">
+        <ul>
+            <li><a href="index.html"> Home</a>
+                <ul>
+                    <li><a href="#">Eric Lucero</a></li>
+                    <li><a href="#">Who</a></li>
+                    <li><a href="#">Why?</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="projects.html">Projects</a>
+                <ul>
+                    <li><a href="#"> Project #1 </a></li>
+                    <li><a href="#"> Project #2 </a></li>
+                    <li><a href="#"> Project #3 </a></li>
+                </ul>
+            </li>
+            <li> <a href="pictures.html">Pictures</a></li>
+            <li><a href="social.html">Social</a></li>
+            <li><a href="tables.html"> Tables</a> </li>
+            <li><a href="cascade.html">CSS</a>
+                <ul>
+                    <li><a href="css-assesment.html"> Assesment 1</a> </li>
+                    <li><a href="css-debug.html"> Assesment 2</a> </li>
+                    <li><a href="css-font.html"> Assesment 3</a> </li>
+                </ul>
+            </li>
+            <li><a href="animate.html">Animate</a> </li>
+            <li><a href="units.html">Units</a>
+                <ul>
+                    <li><a href="position.html"> Positioning</a></li>
+                    <li><a href="hidden-info.html"> Hidden</a></li>
+                </ul>
+            </li>
+            <li class="active-nav"> <a href="javascript.html"> Js</a>
+                <ul>
+                    <li> <a> Print</a></li>
+                    <li> <a> Math</a></li>
+                    <li> <a> Arrays</a></li>
+                    <li> <a href="JsSearch.html"> Search</a></li> 
+                    <li> <a href="JsSillyStories.html"> SillyStories</a></li>                                                    
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+    <p id="p-summary">
+        El <a> Javascript </a> controla los elementos y el estilo de una pagina. Entre muchisimas otras cosas mas. Existen recursos como <a href="https://www.w3schools.com/js/default.asp" target="_blank" id="jlkjd"> w3</a>, o <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript" target="_blank">MDN JavaScript</a> muy buenos para aprender de manera muy activa, con codigos interesantes y disponibles para manipular.
+    </p>
+
+    <h2 class="short-header"> <span class="span-header"> Primero -Un jueguito </span> </h2>
+    <p id="p-js">Haremos un programa en JavaScript que sea capaz de hacer lo siguiente:</p>
+    <ol id="ol-js">
+        <li> Generate a random number between 1 and 100.</li>
+        <li> Record the turn number the player is on. Start it on 1.</li>
+        <li> Provide the player with a way to guess what the number is.</li>
+        <li> Once a guess has been submitted first record it somewhere so the user can see their previous guesses.</li>
+        <li> Next, check whether it is the correct number.</li>
+        <li> If it is correct:</li>
+        <ol>
+            <li> Display congratulations message.</li>
+            <li> Stop the player from being able to enter more guesses (this would mess the game up).</li>
+            <li> Display control allowing the player to restart the game.</li>
+        </ol>
+        <li> If it is wrong and the player has turns left:</li>
+        <ol>
+            <li> Tell the player they are wrong.</li>
+            <li> Allow them to enter another guess.</li>
+            <li> Increment the turn number by 1.</li>
+        </ol>
+        <li> If it is wrong and the player has no turns left:</li>
+        <ol>
+            <li> Tell the player it is game over.</li>
+            <li> Stop the player from being able to enter more guesses (this would mess the game up).</li>
+            <li> Display control allowing the player to restart the game.</li>
+
+        </ol>
+
+        <li> Once the game restarts, make sure the game logic and UI are completely reset, then go back to step 1.</li>
+    </ol>
+
+    <div id="div-juego1">
+        <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
+        <div class="resultParas">
+            <p class="Previousguesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+        </div>
+        <svg id="svgs" width="100%" height="2em" class = "svg-js">
+  <rect x="0%" y="0" rx="0" ry="0" width="8%" height="50%"
+  style="fill:gray;opacity:0.55" />
+    <rect x="10%" y="0" rx="0" ry="0" width="8%" height="50%"
+  style="fill:gray;opacity:0.55" />
+      <rect x="20%" y="0" rx="0" ry="0" width="8%" height="50%"
+  style="fill:gray;opacity:0.55" />
+      <rect x="30%" y="0" rx="0" ry="0" width="8%" height="50%"
+  style="fill:gray;opacity:0.55" />
+      <rect x="40%" y="0" rx="0" ry="0" width="8%" height="50%"
+  style="fill:gray;opacity:0.55" />
+      <rect x="50%" y="0" rx="0" ry="0" width="8%" height="50%"
+  style="fill:gray;opacity:0.55" />
+      <rect x="60%" y="0" rx="0" ry="0" width="8%" height="50%"
+  style="fill:gray;opacity:0.55" />
+      <rect x="70%" y="0" rx="0" ry="0" width="8%" height="50%"
+  style="fill:gray;opacity:0.55" />
+      <rect x="80%" y="0" rx="0" ry="0" width="8%" height="50%"
+  style="fill:gray;opacity:0.55" />
+      <rect x="90%" y="0" rx="0" ry="0" width="8%" height="50%"
+  style="fill:gray;opacity:0.55" />
+</svg>
+    </div>
+
+    <svg width="400" height="580">
+  <rect x="150" y="20" rx="20" ry="20" width="100%" height="150"
+  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+    <rect x="0" y="20" rx="0" ry="0" width="150" height="150"
+  style="fill:red;opacity:0.5" />
+</svg>
+    <script src="js-scripts/js-juego1.js">
+    </script>
+
+</body>
+
+<footer>
+    <p>©Copyright 2050 by nobody. All rights reversed.</p>
+</footer>
+
+</html>

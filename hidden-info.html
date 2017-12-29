@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tabbed hidden info box</title>
+    <meta name="author" content="Eric Lucero">
+    <link rel="shortcut icon" href="media/ericlogo.png">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<!--    <link href="styles/position.css" rel="stylesheet" type="text/css">-->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/header-anima.css" rel="stylesheet" type="text/css">
+    <link href="styles/hidden.css" rel="stylesheet" type="text/css">
+    <style>
+    </style>
+</head>
+<header>
+    <h1> Position - hidden </h1>
+    <nav class="navi">
+        <ul>
+            <li><a href="index.html"> Home</a>
+                <ul>
+                    <li><a href="#">Eric Lucero</a></li>
+                    <li><a href="#">Who</a></li>
+                    <li><a href="#">Why?</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="projects.html">Projects</a>
+                <ul>
+                    <li><a href="#"> Project #1 </a></li>
+                    <li><a href="#"> Project #2 </a></li>
+                    <li><a href="#"> Project #3 </a></li>
+                </ul>
+            </li>
+            <li> <a href="pictures.html">Pictures</a></li>
+            <li><a href="social.html">Social</a></li>
+            <li><a href="tables.html"> Tables</a> </li>
+            <li><a href="cascade.html">CSS</a> 
+                <ul>
+                    <li><a href="css-assesment.html"> Assesment 1</a> </li>
+                    <li><a href="css-debug.html"> Assesment 2</a> </li>
+                    <li><a href="css-font.html"> Assesment 3</a> </li>
+                </ul>
+            </li>
+            <li><a href="animate.html">Animate</a> </li>
+            <li class="active-nav"><a href="units.html">Units</a>
+                <ul>
+                    <li><a href="position.html"> Positioning</a></li>
+                    <li><a href="hidden-info.html"> Hidden</a></li>
+                </ul>
+            </li>
+            <li> <a href="javascript.html"> Js</a>
+                <ul>
+                    <li> <a> Print</a></li>
+                    <li> <a> Math</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+
+    <label for="toggle">❔</label>
+    <input type="checkbox" id="toggle">
+    <aside>
+        <h4>Information</h4>
+
+        <p>Some very important information about your app:</p>
+
+        <ol>
+            <li>It has a really cool slide-out information box.</li>
+            <li>This information box uses a combination of fixed positioning and a CSS transition for the smooth sliding.</li>
+            <li>It also uses a cool technique called the <a href="https://css-tricks.com/the-checkbox-hack/">checkbox hack</a>.</li>
+            <li>This allows you to create a nice "toggle on/toggle off" UI effect without using any JavaScript, which will work in IE9 and above (the smooth transition will work in IE10 and above.)</li>
+            <li>It has a really cool slide-out information box.</li>
+            <li>It has a really cool slide-out information box.</li>
+            <li>It has a really cool slide-out information box.</li>
+            <li>It has a really cool slide-out information box.</li>
+            <li>It has a really cool slide-out information box.</li>
+            <li>It has a really cool slide-out information box.</li>
+        </ol>
+
+    </aside>
+    <button>CallToAction</button>
+    <!--
+<svg width="900" height="1600">   
+<rect width="100%" height="100%" fill="rgba(90, 220, 220, 0.5)" />
+</svg>
+-->
+    <script>
+        function createParagraph() {
+            var para = document.createElement('p');
+            para.textContent = 'Gracias por el click!';
+            document.body.appendChild(para);
+        }
+
+        var boton = document.querySelectorAll('button');
+
+        for (var i = 0; i < boton.length; i++) {
+            boton[i].addEventListener('click', createParagraph);
+        }
+    </script>
+
+</body>
+<footer>
+    <p>©Copyright 2050 by nobody. All rights reversed.</p>
+</footer>
+
+</html>
