@@ -1,0 +1,47 @@
+/* || general styles */
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+/*  width: ;*/
+  margin: 0 auto;
+}
+
+.JSON-h1, .JSON-h2 {
+  font-family: 'Faster One', cursive;
+}
+
+/* header styles */
+
+.JSON-h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.JSON-header p {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* section styles */
+
+.JSON-section article {
+  width: 33%;
+  float: left;
+}
+
+.JSON-section p {
+  margin: 5px 0;
+}
+
+.JSON-section ul {
+  margin-top: 0;
+}
+
+.JSON-h2 {
+  font-size: 2.5em;
+  letter-spacing: -2px;
+  margin-bottom: 10px;
+}

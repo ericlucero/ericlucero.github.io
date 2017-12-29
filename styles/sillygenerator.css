@@ -1,0 +1,38 @@
+body {
+      font-family: helvetica, sans-serif;
+/*      width: 350px;*/
+    }
+    label {
+      font-weight: bold;
+      margin: 30px 0em 1em 10em;
+      font-size: 2em;
+    }
+    .div-silly {
+      padding-bottom: 20px;
+    }
+    input[type="text"] {
+      padding: 5px;
+      width: 150px;
+    }
+    .story {
+        font-size: 2em;
+        margin: 20px 8em;
+      background: #FFC125;
+      color: #5E2612;
+      padding: 18px;
+      visibility: hidden;            
+    }
+#div-svg{
+    display: block;
+    margin: auto;
+    background-color: aqua
+}
+/*Para el boton*/
+.randomize{
+    margin-left: 20em;
+}
+.div-storytext{
+    font-size: 1.5em;
+    font-weight: 800;
+    color: red;
+}

@@ -1,0 +1,113 @@
+ .msgBox {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 242px;
+     border-radius: 10px;
+     background-color: #eee;
+     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+ }
+
+ .msgBox p {
+     line-height: 1.5;
+     padding: 10px 20px;
+     color: #333;
+     padding-left: 82px;
+     background-position: 25px center;
+     background-repeat: no-repeat;
+     font-size: 1.5em;
+ }
+
+ .msgBox button {
+     background: none;
+     border: none;
+     position: absolute;
+     top: 0;
+     right: 0;
+     font-size: 1.1rem;
+     color: #aaa;
+ }
+
+ /*Functions 2          */
+
+ .numberInput {
+     font-size: 2em;
+     margin: 10px 1px 0;
+ }
+
+ .return-p-square {
+     font-size: 4em;
+     color: red;
+     margin-left: 20px;
+     margin-right: 20px;
+     /*    background-color: rgba(150,250,0,0.6);*/
+     border-radius: 12px;
+     padding: 8px;
+     text-align: center;
+ }
+
+ .return-p-cube {
+     font-size: 4em;
+     color: red;
+     margin-left: 20px;
+     margin-right: 20px;
+     /*    background-color: rgba(255,0,250,0.6);*/
+     border-radius: 12px;
+     padding: 8px;
+     text-align: center;
+ }
+
+ .return-p-factorial {
+     font-size: 4em;
+     color: red;
+     margin-left: 20px;
+     margin-right: 20px;
+     /*    background-color: rgba(0,250,255,0.6);*/
+     border-radius: 12px;
+     padding: 8px;
+     text-align: center;
+ }
+
+ .div-cambiaColor {
+     margin: auto;
+     padding: 20%;
+     align-content: center;
+     border: 12px solid black;
+     align-content: center;
+ }
+
+ .button-cambiaColor {
+     margin: auto;
+     font-size: 3em;
+     padding: 20px;
+     border-radius: 14px;
+     color: white;
+     /*    background-color: orange;    */
+ }
+
+ .div-cambiaColorId2 {
+     margin: 30px auto;
+     padding: 25%;
+     align-content: center;
+     border: 12px solid blue;
+     align-content: center;
+ }
+
+ .button-cambiaColor2 {
+     margin: 30px auto;
+     font-size: 3em;
+     padding: 20px;
+     border-radius: 14px;
+     color: white;
+     /*    background-color: orange;    */
+ }
+
+ #div-eventListId {
+/*     margin: 30px auto;*/
+     background-color: red;
+     height: 100px;
+     width: 20%;
+     float: left;
+     border: 1px solid black;
+ }

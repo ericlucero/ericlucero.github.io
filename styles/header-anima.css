@@ -1,0 +1,100 @@
+.navi {
+    width: 100%;
+/*    background-color: red;*/
+}
+.navi li{
+    background-color: rgba(0,10,0,0.85);
+    width: 9.77%;
+    margin: 0px 1px;
+    /*#li/total*/
+}
+.navi ul {
+    *zoom:1;
+    list-style:none;
+    margin:0;
+    padding:0;
+    background:#333;
+}
+.navi ul:before,.nav ul:after {
+    content:"";
+    display:table;
+}
+.navi ul:after {
+    clear:both;
+}
+.navi ul > li {
+    float:left;
+    position:relative;
+}
+
+.navi li a {
+    display: block;
+    padding: 8px 10px;
+/*    line-height:1.2em;*/
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 0, 1);
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5em;
+/*    font-size: 25px;*/
+/*        width:75px;*/
+}
+.navi a:hover {
+    text-decoration:none;
+    background:#595959;
+}
+/*
+.navi li ul {
+    background-color: rgba(200,0,5,0.5);    
+}
+*/
+.navi li ul li {
+    width:150px;
+    align-content: center;
+/*    color: red;*/
+}
+.navi li ul a {
+    border:none;
+/*    color: red;*/
+}
+.navi li ul a:hover {
+    background-color: rgba(0,150,150,0.65);
+}
+
+.navi li ul {
+    position:absolute;
+    left:0;
+    top:36px;
+    z-index:1;
+}
+.navi li ul li {
+/*    The overflow CSS property specifies whether to clip content, show scrollbars, or display overflowing content when it is too large for its block-level container.*/
+    overflow:hidden; 
+    height:0;
+    -webkit-transition:height 300ms ease-in;
+    -moz-transition:height 300ms ease-in;
+    -o-transition:height 300ms ease-in;
+    transition:height 300ms ease-in;
+}
+.navi ul > li:hover ul li {
+    height:4em;
+}
+.active-nav > a {
+    background-color: rgba(255, 255, 200, 0.6);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oleo Script', cursive;
+    list-style:none;
+    margin:0;
+    color: red;    
+}
+/*
+.active-nav > a:visited {
+  color: red;
+}
+*/
+
+.active-nav > a:hover{
+    background-color: rgba(255, 255, 0, 1);
+    color: red;
+}

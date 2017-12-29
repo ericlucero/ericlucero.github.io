@@ -1,0 +1,183 @@
+.jsPractice_a {
+    text-decoration: none;
+}
+
+.jsAllYouNeedisPracticeLeft {
+    display: block;
+    padding: 40px;
+    margin: 40px auto;
+    width: 80%;
+    font-size: 3em;
+    /*    background-color: rgba(255, 255, 0, 0.5);*/
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.div-Practice1 {
+    float: left;
+    margin-left: 30%;
+}
+
+.div-Practice1 p {
+    font-family: 'Abril Fatface', cursive;
+}
+
+.div-Practice2 {
+    float: left;
+    margin: auto 10px;
+}
+
+.div-Practice2 p {
+    font-family: 'Cinzel', serif;
+}
+
+.li-practice ol {
+    counter-reset: foo;
+}
+
+.li-practice ol > li {
+    counter-increment: foo;
+    display: table-row;
+}
+
+.li-practice ol > li::before {
+    content: counter(foo) ".";
+    display: table-cell;
+    /* aha! */
+    text-align: left;
+}
+
+.li-practice li {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+    margin: 20px 150px 5px 150px;
+}
+
+.li-practice li ~ p {
+    font-family: 'Sarala', sans-serif;
+    font-size: 1.5em;
+    color: indianred;
+    margin: 0px 110px 10px 8em;
+}
+
+#div-imgContain {
+    height: 110px;
+    width: 240px;
+    margin: 0px 11em;
+}
+
+#js-Output {
+    color: blue;
+    font-size: 2em;
+    margin: 0px 6em;
+    font-weight: bold;
+}
+
+.js-Practice {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+
+}
+
+.para0-practice {
+    border-left: 7px solid darkorange;
+    background-color: rgba(1, 1, 1, 0.2);
+    width: 33%;
+    padding: 10px;
+    margin: auto;
+    font-size: 2em;
+    font-weight: bold;
+    border-top-right-radius: 18px;
+}
+
+.para1-practice {
+    border-left: 7px solid darkorange;
+    background-color: rgba(1, 1, 1, 0.2);
+    width: 33%;
+    padding: 10px;
+    margin: auto;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.para2-practice {
+    border-left: 7px solid darkorange;
+    background-color: rgba(1, 1, 1, 0.2);
+    width: 33%;
+    padding: 10px;
+    margin: auto;
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom-right-radius: 18px;
+}
+
+ol {
+    counter-reset: li;
+    /* Initiate a counter */
+    margin-left: 0;
+    /* Remove the default left margin */
+    padding-left: 0;
+    /* Remove the default left padding */
+}
+
+ol > li {
+    position: relative;
+    /* Create a positioning context */
+    margin: 0 0 6px 2em;
+    /* Give each list item a left margin to make room for the numbers */
+    padding: 4px 8px;
+    /* Add some spacing around the content */
+    list-style: none;
+    /* Disable the normal item numbering */
+    border-top: 3px solid darkorange;
+    background: rgba(200, 200, 200, 0.5);
+}
+
+ol > li:before {
+    content: counter(li);
+    /* Use the counter as content */
+    counter-increment: li;
+    /* Increment the counter by 1 */
+    /* Position and style the number */
+    position: absolute;
+    top: -2px;
+    left: -2em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 2em;
+    /* Some space between the number and the content in browsers that support
+	   generated content but not positioning it (Camino 2 is one example) */
+    margin-right: 8px;
+    padding: 4px;
+    border-top: 6px solid darkorange;
+    color: #fff;
+    background: #666;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+}
+
+li ol,
+li ul {
+    margin-top: 6px;
+}
+
+ol ol li:last-child {
+    margin-bottom: 0;
+}
+
+#input38 {
+/*    margin-left: 100px;*/
+    margin-bottom: 10px;
+    display: block;
+    width: 60px;
+    height: 30px;
+    background-color: antiquewhite;
+    color: darkred;
+    font-size: 2em;
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+.output * {
+  box-sizing: border-box;
+}
+
+.output ul {
+  padding-left: 0;
+}
+
+.output li {
+  display: block;
+  float: left;
+  width: 12%;
+  border: 2px solid white;
+  padding: 5px;
+  height: 75px;
+  background-color: #4A2DB6;
+  color: white;
+}
+.output li:hover{
+    color: #4A2DB6;
+    background-color: rgba(250,200,0,0.75);
+    font-weight: bold;
+    font-size: 1.7em;
+}
