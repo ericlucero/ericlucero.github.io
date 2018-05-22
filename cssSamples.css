@@ -1,0 +1,349 @@
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    /*    font: 100% sans-serif;*/
+    font: 1em sans-serif;
+    margin: 0em;
+    background-color: #fff;
+    color: #666;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
+a {
+    color: #3d6dbe;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #6594e0;
+}
+
+header {
+    background-color: rgb(16, 238, 168);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 4em;
+    text-align: center;
+    height: 240px;
+
+}
+
+header p {
+    font-size: 75%;
+    margin-top: 1.5em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.8;
+    margin-top: 0em;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+    border-bottom: none;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+header h1 {
+    color: white;
+    font-size: 3.3em;
+    margin: 0;
+    letter-spacing: 1px;
+    opacity: 1;
+    text-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 70px;
+    font-weight: bolder;
+}
+
+header p {
+    color: #fff;
+    font-size: 0.8em;
+    padding-top: 3.5em;
+}
+
+#div-example {
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: 6px 5px green;
+    background-color: palegreen;
+    max-width: 60%;
+}
+
+.span-light {
+    color: white;
+    font-weight: 100;
+    text-shadow: none;
+}
+
+.span-1 {
+    color: indianred;
+    font-weight: 100;
+    text-shadow: none;
+}
+
+.span-2 {
+    color: indianred;
+    font-weight: 100;
+    text-shadow: none;
+}
+
+.span-3 {
+    color: indianred;
+    font-weight: 700;
+    text-shadow: none;
+    text-shadow: 1px 2px 0 rgba(155, 55, 50, 0.25);
+}
+
+.span-4 {
+    color: rebeccapurple;
+    font-weight: 100;
+    text-shadow: none;
+}
+
+section h1 {
+    font-size: 1.8em;
+    line-height: 1em;
+    margin-bottom: .6em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.experience {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid;
+}
+
+.divDatePos {
+    padding: 15px 1px;
+    display: inline-block;
+    background-color: rgba(16, 238, 168, 0);
+    float: left;
+    width: 33.33%;
+}
+
+.exp-date {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.exp-pos {
+    font-weight: 200;
+}
+
+.divPlacePara {
+    padding: 15px 5px;
+    background-color: rgba(10, 230, 125, 0);
+    width: 66.67%;
+    float: right;
+}
+
+.exp-plc {
+    font-weight: 400;
+    /*    color: white;*/
+}
+
+.exp-para {
+    font-weight: 100;
+    text-align: center;
+    font-size: 0.75em;
+    margin-top: 6px;
+}
+
+/********   EXPERIENCE 2   ********/
+
+.experience2 {
+    border: 2px solid;
+}
+
+.exp-pos2 {
+    margin: 4px auto;
+}
+
+.exp-plc2 {
+    margin: 4px auto;
+    font-size: 1em;
+    padding: 0px 15%;
+}
+
+.exp-date2 {
+    margin: 7px auto;
+    font-weight: 100;
+}
+
+/********   EXPERIENCE 2   ********/
+
+.experience3 {
+    display: flex;
+    border: 1px solid;
+}
+
+/********   EXPERIENCE 4   ********/
+
+.experience4 {
+    margin: 10px 0px;
+    border: 1px solid red;
+    float: left;
+}
+
+.divDatePos4 {
+    float: left;
+}
+
+.exp-pos4 {
+    margin: 0px 5px;
+    float: left;
+    font-weight: bold;
+}
+
+.exp-plc4 {
+    margin: 3px 5px;
+    text-align: left;
+    float: left;
+}
+
+.divPlacePara4 {
+    float: left;
+}
+
+.exp-date4 {
+    margin: 10px 0px;
+    width: 100%;
+    text-align: left;
+}
+
+#expPara4 {
+    margin: 10px 0px;
+    text-align: left;
+}
+
+/********   EXPERIENCE 4   ********/
+
+/********   EXPERIENCE 5   ********/
+
+.experience5 {
+margin: 3% 0%;
+    border: 1px solid rgba(17, 212, 150, 1);
+    box-shadow: 4px 7px 0px rgba(17, 212, 150, 0.4);
+    display: inline-block;
+}
+
+.divDatePos5 {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+}
+
+.exp-pos5 {
+    width: 33%;
+    float: left;
+    font-weight: bold;
+    font-size: 1em;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    line-height: 60px;
+    background-color: rgba(17, 212, 150, 1);
+    color: white;
+    text-shadow: 2px 2px rgba(12, 140, 100, 1);
+    /* the same as your div height */
+}
+
+#expPlace5 {
+    height: 100%;
+    background-color: rgba(17, 212, 150, 1);
+    text-align: center;
+    float: left;
+    width: 67%;
+    font-size: 0.8em;
+}
+
+.divPlacePara5 {
+    float: left;
+    margin-left: 3%;
+}
+
+.exp-date5 {
+    margin: 10px 0px;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    color: rgba(0, 202, 160, 1);
+}
+
+#expPara5 {
+    margin: 10px 0px;
+    text-align: left;
+}
+
+/********   EXPERIENCE 5   ********/
+
+footer {
+    margin-top: 40em;
+    margin-bottom: 1em;
+    color: #888;
+}
+
+footer hr {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.center {
+    padding: 0 4%;
+    background-color: rgba(111, 111, 111, 0.2);
+    text-align: center;
+    max-width: 100%;
+}
+
+@media (min-width: 741px) {
+    header {
+        background-color: red;
+    }
+    #div-example {
+        background-color: ghostwhite;
+        max-width: 60%;
+    }
+    header p {
+        font-size: 95%;
+        margin-top: 1em;
+    }
+}
+
+/*@media all and (max-width: 768px) { ... }*/
+
+#dimensions{
+    background-color: rgba(17, 212, 150, 1);
+    box-shadow: 6px 7px 10px gray;
+    width: 35%;
+    text-align: center;
+    font-size: 2em;
+    position: fixed;
+    top: 93%;
+    left: 60%;
+}

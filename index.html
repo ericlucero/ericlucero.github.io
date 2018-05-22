@@ -1,175 +1,309 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title> Eric Lucero | Home</title>
-    <meta charset="utf-8">
-    <meta name="author" content="Eric Lucero">
-    <link rel="shortcut icon" href="media/ericlogo.png">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link href="styles/header-anima.css" rel="stylesheet" type="text/css">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8" />
+  <title>Eric A. Lucero G. | Welcome :)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheets -->
+  <script defer src="js/fontawesome-all.js"></script>
+  <!--    <link rel="stylesheet" href="style/mobileStyle.css" type="text/css" />-->
+  <link rel="stylesheet" href="style/mobileStyle.css" type="text/css" />
+
+  <!-- **************    Icons library   **************-->
+  <!-- Add icon library: Font Awesome-->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- Add icon library: Google -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--**************    Fonts  **************-->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:900|Raleway:200" rel="stylesheet">
+  <!--Custom fonts. To improve load times, remove this and update the h1 styling in style.css-->
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+
+  <!-- just in case viewer is using Internet Explorer -->
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
 </head>
-<header>
-    <h1> Eric Lucero</h1>
-   <nav class="navi">
-        <ul>
-            <li class="active-nav"><a href="index.html"> Home</a>
-                <ul>
-                    <li><a href="#">Eric Lucero</a></li>
-                    <li><a href="#">Who</a></li>
-                    <li><a href="#">Why?</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contacts</a></li>
-            <li><a href="projects.html">Projects</a>
-                <ul>
-                    <li><a href="#"> Project #1 </a></li>
-                    <li><a href="#"> Project #2 </a></li>
-                    <li><a href="#"> Project #3 </a></li>
-                </ul>
-            </li>
-            <li> <a href="pictures.html">Pictures</a></li>
-            <li><a href="social.html">Social</a></li>
-            <li><a href="tables.html"> Tables</a> </li>
-            <li><a href="cascade.html">CSS</a> 
-                <ul>
-                    <li><a href="css-assesment.html"> Assesment 1</a> </li>
-                    <li><a href="css-debug.html"> Assesment 2</a> </li>
-                    <li><a href="css-font.html"> Assesment 3</a> </li>
-                </ul>
-            </li>
-            <li><a href="animate.html">Animate</a> </li>
-            <li><a href="units.html">Units</a>
-                <ul>
-                    <li><a href="position.html"> Positioning</a></li>
-                    <li><a href="hidden-info.html"> Hidden</a></li>
-                </ul>
-            </li>
-            <li> <a href="javascript.html"> Js</a>
-                <ul>
-                    <li> <a> Print</a></li>
-                    <li> <a> Math</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-</header>
 
-<body>
-    <blockquote class="slider note">
-        <strong>Un dato:</strong> poner el <mark>font-size</mark> del elemento HTML en
-        <strong>10 px</strong> para que se puede poner todos los elementos que tienen a HTML como <em>parent</em> (todos).
-    </blockquote>
+<body class="w3-light-grey">
+  <!-- Header-->
+  <!-- <p>
+          <span class="span-1" id="hdrSpn">Fisica | </span>
+          <span class="span-2" id="hdrSpn">Matematica | </span>
+          <span class="span-3" id="hdrSpn">Docencia | </span>
+          <span class="span-4" id="hdrSpn">Computacion </span>
+      </p> -->
+  <header class="parallax">
+    <!--************************* Div-Hamburgesa *************************-->
+    <div class="navWrap" id="navWrapid">
+      <div id="clickMenu" class="divNaviBar intro">
+        <span class="topNaviBar" id="topSpan"></span>
+        <span class="middleNaviBar" id="midSpan"></span>
+        <span class="bottomNaviBar" id="bottSpan"></span>
+      </div>
+    </div>
+    <!--************************* Div-Hamburgesa *************************-->
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <a href="about.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <!--**************************** Div-X-close ****************************-->
+      <div class="closebtn">
+        <div id="closeMenu" class="divClose2">
+          <svg width="60px" height="60px" version="1.1">
+         <!-- <circle class="close Circle" cx="50%" cy="50%" r="40%" stroke="rgba(252, 110, 144,0.5)" stroke-width="4" fill-opacity="0" /> -->
+         <line id="bara1" class="close ab1" x1="20%" y1="20%" x2="80%" y2="80%" stroke="rgb(252, 110, 144)" stroke-width="5"/>
+         <line id="bara2" class="close ab2" x1="80%" y1="20%" x2="20%" y2="80%" stroke="rgb(252, 110, 144)" stroke-width="6"/>
+       </svg>
+        </div>
+      </div>
+      <!--********* ******************* Div-X-close ****************************-->
+    </div>
 
-    <blockquote>
-        <p>
-            Texto con <code>text-shadow</code>
-        </p>
-    </blockquote>
-    <blockquote>
-        <a href="https://icons8.com" title="Link to Icons" >Icon pack by Icons8</a>
-    </blockquote>
+    <h1> <span class="span-light parallax">Eric</span> Lucero <span class="subtlt-1"></span></h1>
+    <!-- ********* ******************* PHOTO ****************************-->
+    <div class="header-photo">
+      <!-- <svg class="svg-photo" id="svg-photo-id" width="75%" height="75%" version="1.1">
+        <circle class="close Circle" cx="50%" cy="50%" r="36%" stroke="rgb(252, 110, 144)" fill="red" stroke-width="2" fill-opacity="0.75" />
+       </svg> -->
+       <img src="media/DSC_4162_Square.jpg" />
+    </div>
+    <!-- ********* ******************* PHOTO ****************************-->
+    <h2>
+          <a id="typewrt" class="typewrite" data-period="1000"
+          data-type='[ "Freelancer." ,"Creative.", "Clever.",
+           "Web Develop.","CSS3", "HMTL5", "JavaScript","Design.","Programing", "jQuery",
+            "Modelling.","Physics", "Applied Math", "Teaching","MatLab","CSS3",
+            "Illustration","Animation.", "Octave","Simulation.", "Digital Nomad",
+            "Photography", "Panama", "Front End","CSS3", "BootStrap","JSON", "MongoDB", "NoSQL DB", ]'>
+            <span class="wrap"></span>
+          </a>
+        </h2>
 
-    <blockquote class="box-model">
-        <h4> Texto con <code>Overflow</code> </h4>
-        Muchos años después, frente al pelotón de fusilamiento, el coronel Aureliano Buendía había de recordar aquella tarde remota en que su padre lo llevó a conocer el hielo. Macondo era entonces una aldea de veinte casas de barro y cañabrava construidas a la orilla de un río de aguas diáfanas que se precipitaban por un lecho de piedras pulidas, blancas y enormes como huevos prehistóricos. El mundo era tan reciente, que muchas cosas carecían de nombre, y para mencionarlas había que señalarlas con el dedo. Todos los años, por el mes de marzo, una familia de gitanos desarrapados plantaba su carpa cerca de la aldea, y con un grande alboroto de pitos y timbales daban a conocer los nuevos inventos. Primero llevaron el imán. Un gitano corpulento, de barba montaraz y manos de gorrión, que se presentó con el nombre de Melquíades, hizo una truculenta demostración pública de lo que él mismo llamaba la octava maravilla de los sabios alquimistas de Macedonia. Fue de casa en casa arrastrando dos lingotes metálicos, y todo el mundo se espantó al ver que los calderos, las pailas, las tenazas y los anafes se caían de su sitio, y las maderas crujían por la desesperación de los clavos y los tornillos tratando de desenclavarse, y aun los objetos perdidos desde hacía mucho tiempo aparecían por donde más se les había buscado, y se arrastraban en desbandada turbulenta detrás de los fierros mágicos de Melquíades.
-    </blockquote>
+    <h2>
+              <a id="typewrt" class="typewrite" data-period="1000"
+              data-type='[ "Illustration","Animation.", "Octave","Simulation.", "Digital Nomad",
+              "Modelling.","Physics", "Applied Math", "Teaching","MatLab","CSS3",
+              "JavaScript","Design.","Programing", "jQuery",
+               "Photography", "Panama", "Front End","CSS3", "BootStrap","JSON", "MongoDB", "NoSQL DB", ]'>
+                <span class="wrap"></span>
+              </a>
+            </h2>
 
-    <article>
-        <h4>Backgrounds</h4>
-        <p class="background">
-            Fui una letra de tango para tu indiferente melodía.
-        </p>
-        <p class="background-image">
-            Fui una letra de tango para tu indiferente melodía.
-        </p>
-        <p class="background-image repeat">
-            Fui una letra de tango para tu indiferente melodía.
-        </p>
-        <p class="background-image no-repeat">
-            Fui una letra de tango para tu indiferente melodía.
-        </p>
-        <p class="background-image no-repeat back-gradient">
-            Fui una letra de tango para tu indiferente melodía.
-        </p>
-        <p class="background-image repeat-back-gradient">
-            Fui una letra de tango para tu indiferente melodía.
-        </p>
-        <p class="background-image repeat-back-gradient back-attach">
-            Fui una letra de tango para tu indiferente melodía.<br> Fui una letra de tango para tu indiferente melodía.<br> Fui una letra de tango para tu indiferente melodía.<br> Fui una letra de tango para tu indiferente melodía.<br> Fui una letra de tango para tu indiferente melodía.<br> Fui una letra de tango para tu indiferente melodía.<br> Con el <a href="    https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html" target="_blank"><code>attachement</code> </a>.
-        </p>
-    </article>
-    <blockquote class="border-gradient">
-            Fui una letra de tango para tu indiferente melodía.<br> Fui una letra de tango para tu indiferente melodía.<br> Fui una letra de tango para tu indiferente melodía.<br>
-    </blockquote>
-    
-    <p class="filter">Filter</p>
-    <figure>
-        <img src="media/dinosaur.jpg" title="Esqueleto de Dinosaurio" alt="Esqueleto de Dinosaurio" width="400" height="341">
-        <figcaption> Una imagen del dinosario tomada en el museo.</figcaption>
-    </figure>
-    <article>
-        <h2> Spinetta</h2>
-        <video src="media/video.webm" controls>
-    <p> Un video del planeta Marte, sacado de Youtube. </p>
-    <p>
-    The BeautifulMars Project is looking for people to help us promote the idea that knowledge about Mars belongs to everyone. If you are fluent or even semi-fluent in any of the languages listed below, or want to volunteer to add a new one, contact us to help make outreach history.
-    </p>
-</video>
-    </article>
-    <article>
-        <h2> Nahuel Pennisi - El Necio (Silvio Rodriguez)</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/c80ENONXQzg" frameborder="0" allowfullscreen></iframe>
-        <p> Una canción original del cubano
-            <a href="https://es.wikipedia.org/wiki/Silvio_Rodr%C3%ADguez" title="The best place to find more information about Mozilla's mission and how to contribute"> Silvio Rodríguez</a>, interpretado por el impresionante Nahuel Pennisi, quien tiene una virtud de interpretar la guitarra y una voz que te trasladará.
-        </p>
-    </article>
+    <i id="downArrow" class="fas fa-arrow-circle-down arrow-Down"></i>
+  </header>
+  <br>
 
-    <article>
-        <h2>Imagenes en formato vectorial <abbr title="SVG: Scalable Vector Graphics">SVG </abbr> </h2>
-        <svg width="300" height="300">
-<rect width="100%" height="100%" fill="blue" />
-<circle cx="120" cy="120" r="100" fill="red" stroke="white" stroke-width="4" />
-</svg>
-        <p>
-            Vector images are defined using algorithms — a vector image file contains shape and path definitions that the computer can use to work out what the image should look like when rendered on the screen. The <abbr title="SVG: Scalable Vector Graphics">SVG </abbr> format allows us to create powerful vector graphics for use on the Web.
-        </p>
+  <svg width="0px" height="0px" class="svg-macro">
+      <symbol id="potofgold" >
+          <g fill="none" stroke="darkgoldenrod" stroke-width="0.5">
+              <circle r="5" transform="translate(30,7)" />
+              <circle r="5" transform="translate(35,13)" />
+              <circle r="5" transform="translate(22,10)" />
+              <circle r="5" transform="translate(27,9)" />
+          </g>
+      </symbol>
+      <symbol id="code-brackets-draw">
+        <g fill="none" stroke-width="1" stroke="black">
+          <!-- <polyline points="75 25 0 75 75 125" /> -->
+          <!-- <polyline points="0 50 100 50"/> -->
+          <polyline points="30 75 50 25"/>
+          <polyline points="30 30 0 50 30 70"/>
+          <polyline points="50 30 80 50 50 70"/>
+          <!-- <polyline points="30 25 0 50 30 75" transform="translate(50,0)"/>           -->
+        </g>
+      </symbol>
+  </svg>
+  <!-- <svg viewBox="0 0 100 100"  width="150px" height="150px">
+    <use xlink:href="#code-brackets-draw"/>
+  </svg> -->
 
-    </article>
+  <h1 class="title-section"> What i Do? </h1>
+  <!-- ****************************** GRIDSSSS ****************************** -->
+  <div class="grid-container">
+    <div class="grid-item grid-item-row1">
+      <div class="grid-content one">
+        <svg width="100px" height="80px" version="1.1">
+           <!-- <circle class="close Circle" cx="50%" cy="50%" r="40%" stroke="rgba(252, 110, 144,0.5)" stroke-width="4" fill-opacity="0" /> -->
+           <rect id="svgBrowser1" x="20%" y=" 0%" width="75%" height="80%" </>
+           <circle cx="50" cy="7" r="2px" fill-opacity="1" fill="red" />
+           <circle cx="55" cy="7" r="2px" fill-opacity="1" fill="yellow" />
+           <circle cx="60" cy="7" r="2px" fill-opacity="1" fill="green" />
+             <use x="40%" y="-15%" xlink:href="#code-brackets-draw"/>
+     </svg>
+      </div>
+      <div class="grid-content two">Web Develop</div>
+    </div>
+    <div class="grid-item grid-item-row1">
+      <div class="grid-content one">
+        <svg width="80px" height="80px" version="1.1">
+           <circle class="close Circle" cx="50%" cy="50%" r="40%" stroke="rgba(252, 110, 144,0.5)" stroke-width="4" fill-opacity="0" />
+     </svg>
+      </div>
+      <div class="grid-content two"> Data Science </div>
+    </div>
+    <div class="grid-item grid-item-row1">
+      <div class="grid-content one">
+        <svg width="80px" height="80px" version="1.1">
+           <circle class="close Circle" cx="50%" cy="50%" r="40%" stroke="rgba(252, 110, 144,0.5)" stroke-width="4" fill-opacity="0" />
+     </svg>
+      </div>
+      <div class="grid-content two"> Front-End</div>
+    </div>
+    <div class="grid-item grid-item-row2">
+      <div class="grid-content one">
+        <svg width="80px" height="80px" version="1.1">
+           <circle class="close Circle" cx="50%" cy="50%" r="40%" stroke="rgba(252, 110, 144,0.5)" stroke-width="4" fill-opacity="0" />
+     </svg>
+      </div>
+      <div class="grid-content two"> Product Design</div>
+    </div>
+    <div class="grid-item grid-item-row2">
+      <div class="grid-content one">
+        <svg width="80px" height="80px" version="1.1">
+           <circle class="close Circle" cx="50%" cy="50%" r="40%" stroke="rgba(252, 110, 144,0.5)" stroke-width="4" fill-opacity="0" />
+     </svg>
+      </div>
+      <div class="grid-content two"> SEO</div>
+    </div>
+    <div class="grid-item grid-item-row3">
+      <div class="grid-content one">
+        <svg width="80px" height="80px" version="1.1">
+               <circle class="close Circle" cx="50%" cy="50%" r="40%" stroke="rgba(252, 110, 144,0.5)" stroke-width="4" fill-opacity="0" />
+         </svg>
+      </div>
+      <div class="grid-content two"> Market Research</div>
+    </div>
+    <div class="grid-item grid-item-row3">
+      <div class="grid-content one">
+        <img id="dispositivo1" src="media/responsiveAll.png" />
+        <!-- <svg width="80px" height="80px" version="1.1">
+           <circle class="close Circle" cx="50%" cy="50%" r="40%" stroke="rgba(252, 110, 144,0.5)" stroke-width="4" fill-opacity="0" />
+     </svg> -->
+      </div>
+      <div class="grid-content two"> Social Media Campaign</div>
+    </div>
+  </div>
+  <!-- ****************************** GRIDSSSS ****************************** -->
+  <h1 class="title-section"> What i Do? </h1>
+  <ol>
+    <li> Front-End Web Develop </li>
+    <li> Web Design </li>
+    <li> Data Science </li>
+    <li> Product Design </li>
+    <li> SEO </li>
+    <li> Social Media Campaign </li>
+    <li> ...and also teach Physics and Math </li>
+  </ol>
 
-    <article>
-        <h3> Otro formato en SVG</h3>
-        <svg width="100%" height="100%">
-<rect width="100%" height="100%" fill="red" />
-<circle cx="100%" cy="100%" r="150" fill="blue" stroke="black" />
-<polygon points="120,0 240,225 0,225" fill="green"/>
-<text x="200" y="100" font-family="Verdana" font-size="55"
-fill="white" stroke="black" stroke-width="2">
-Hello!
-</text>
-</svg>
-    </article>
-    <article>
-        <svg width="100%" height="100%">
-<rect x="10" y="0" width="10" height="200" />    
-<rect x="30" y="0" width="10" height="200" />        
-<rect x="50" y="0" width="10" height="200" />            
-</svg>
-    </article>
-    <svg width="100%" height="100%">   
-<rect width="100%" height="100%" fill="red" />
-</svg>
+  <h1 class="title-section"> How do i Do? </h1>
+  <section class="Features-section">
+    <i class="fab fa-js"></i>
+    <i class="fab fa-html5"></i>
+    <i class="fab fa-css3-alt"></i>
+    <i class="fab fa-python"></i>
+    <i class="fab fa-android"></i>
+  </section>
+  <h1 class="title-section"> Where do i Do? </h1>
 
-    <svg width="900" height="1600">   
-<rect width="100%" height="100%" fill="rgba(90, 220, 220, 0.5)" />
-</svg>
+  <!--**************************** Div-Guia ****************************-->
+  <div class="div-Guia">
+    <svg width="100%" height="100px" version="1.1">
+     <line x1="0" y1="50%" x2="100%" y2="50%" stroke="red" stroke-width="3"/>
+     <line x1="50%" y1="0" x2="50%" y2="100%" stroke="red" stroke-width="1"/>
+   </svg>
+  </div>
+  <!--**************************** Div-Guia ****************************-->
+  <!--**************************** Div-Skills1 ****************************-->
+  <div class="div-svg0">
+    <svg class="svg1" width="100%" height="150" version="1.1">
+     <defs>
+       <filter id="f3" x="0" y="0" width="200%" height="200%">
+         <feOffset result="offOut" in="SourceAlpha" dx="5" dy="10" />
+         <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4" />
+         <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+       </filter>
+     </defs>
+     <polyline points="75 25 0 75 75 125"
+                 stroke="red" fill="transparent" stroke-width="5"filter="url(#f3)"
+                 id="svg-Code1"  />
+     <polyline points="125 0 90 150"
+                 stroke="red" fill="transparent" stroke-width="5" filter="url(#f3)"
+                 id="svg-Code2" />
+     <polyline points="150 25 225 75 150 125"
+                 stroke="red" fill="transparent" stroke-width="5" filter="url(#f3)"
+                 id="svg-Code3" />
+    </svg>
+
+    <h1 class="skills code">Codigo</h1>
+    <p class="p-skills">Codigo Codigo Codigo Codigo Codigo Codigo Codigo Codigo</p>
+  </div>
+  <!--**************************** Div-Skills1 ****************************-->
+
+  <!--**************************** Div-Skills2 ****************************-->
+  <div class="div-svg1">
+    <svg class="svg2" width="300" height="260" version="1.1">
+      <polyline points="50 250 150 250 150 100 50 100 50 255"
+                  stroke="rgba(160,0,240,1.0)" fill="transparent" stroke-width="10" id="svg-IDframe1"/>
+      <!-- <polyline points="25 175 125 175 125 25 25 25 25 180" -->
+      <polyline points="50 250 150 250 150 100 50 100 50 255"
+                  stroke="rgba(160,0,240,0.65)" fill="transparent" stroke-width="10" id="svg-IDframe2"/>
+      <!-- <polyline points="50 150 150 150 150 0 50 0 50 155" -->
+      <polyline points="50 250 150 250 150 100 50 100 50 255"
+                  stroke="rgba(160,0,240,0.4)" fill="transparent" stroke-width="10" id="svg-IDframe3"/>
+    </svg>
+    <h1 class="skills code">A frame for everyone</h1>
+    <p class="p-skills">Codigo Codigo Codigo Codigo Codigo Codigo Codigo Codigo</p>
+  </div>
+  <!--**************************** Div-Skills2 ****************************-->
+
+
+  <!-- /************************  Float divs  ************************/ -->
+  <div id="divChatMe" class="whatsapp-floatDiv floatDIV"> Chat Me! <i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <!-- <div id="divDesc" class="divDescarga floatDIV"><a href="media/00-CV-EricLucero-2018.pdf" download>Descargar PDF<i class="fas fa-file-pdf"></i></a>
+  </div> -->
+  <p id="screenYposition"> </p>
+
+  <p id="dimensions" class="floatDIV"></p>
+  <div id="underConstr" class="floatDIV">
+    <p><i class="material-icons" id="Llave">build</i> Sitio en desarrollo</p>
+  </div>
+  <!-- /************************  Float divs  ************************/ -->
+  <!--Footer-->
+
+  <footer class="center">
+    <div class="icons-div">
+      <!-- Add font awesome icons -->
+      <a href="https://api.whatsapp.com/api/send?phone=50769825076" target="_blank" class="fab fa-whatsapp footer"></a>
+      <a class="fab fa-google footer" target="_blank"></a>
+      <a href="https://www.instagram.com/ericlucero20/" class="fab fa-instagram footer" target="_blank"></a>
+      <a href="https://github.com/EricLuceroGonzalez" class="fab fa-github footer" target="_blank"></a>
+      <a href="https://mobile.twitter.com/EricLuceroG" class="fab fa-twitter footer" target="_blank"></a>
+      <a href="https://www.facebook.com/EricLucero20" class="fab fa-facebook footer" target="_blank"></a>
+    </div>
+    <hr>
+    <span>    <i class="far fa-registered"></i> Eric Lucero Gonzalez, 2018</span>
+
+    <div class="footer-closure">
+      <i class="fas fa-code"></i> made with
+      <i class="fas fa-heart"></i> for all the
+      <i class="fas fa-globe"></i>...
+      <br> and
+      <i class="fab fa-js"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-html5"></i>
+    </div>
+  </footer>
+  <script src="js/showViewportSize.js"></script>
+  <script src="js/touch-event0.js"></script>
+  <script src="js/naviBar.js"></script>
+  <script src="js/typewriter.js"></script>
 </body>
-<footer>
-    <p>©Copyright 2050 by nobody. All rights reversed.</p>
-</footer>
 
 </html>
