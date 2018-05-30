@@ -14,6 +14,7 @@
     font: 1em sans-serif;
     margin: 0em;
     background-color: #fff;
+      /* background: linear-gradient(to bottom right, rgba(133, 133, 133, 0.4), rgba(17, 212, 150, 0.3)); */
     color: #666;
     /* For parallax: */
     height: 100%;
@@ -378,16 +379,16 @@
 
   .header-photo img {
     z-index: 1000;
-    width: 36%;
+    width: 46%;
     border-radius: 50%;
     border-color: red;
     border-width: medium;
     border-style: solid;
-    box-shadow: 10px 12px 50px black;
+    box-shadow: 6px 5px 14px black;
   }
 
   .fa-arrow-circle-down {
-    color: #005bea;
+    color: rgba(250, 39, 39, 0.84);
     position: absolute;
     bottom: 40px;
   }
@@ -586,7 +587,7 @@
   .center {
     padding: 2% 2%;
     /*    background-color: rgba(111, 111, 111, 0.2);*/
-    background: linear-gradient(to bottom right, rgba(111, 111, 111, 0.3), rgba(17, 212, 150, 0.1));
+    background: linear-gradient(to bottom right, rgba(133, 133, 133, 0.4), rgba(17, 212, 150, 0.3));
     text-align: center;
     max-width: 100%;
   }
@@ -736,12 +737,14 @@
     /* background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%); */
     background: #333333;
     /* fallback for old browsers */
-    background-image: -webkit-linear-gradient(to top, #00c6fb 0%, #005bea 100%);
-    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    background-image: -webkit-linear-gradient(to top, #00ecfb 1%, #00c6fb 30%, #005bea 100%);
+    background-image: linear-gradient(to top, #00ecfb 1%, #00c6fb 30%, #005bea 100%);
     background-size: 100% 400%;
     -webkit-animation: Gradient 5s ease infinite;
     -moz-animation: Gradient 5s ease infinite;
     animation: Gradient 5s ease infinite;
+    border-bottom: 2px solid red;
+    ``
   }
 
   @-webkit-keyframes Gradient {
@@ -1080,12 +1083,12 @@
     background-color: red;
     color: white;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 3px 3px;
     text-align: center;
-    font-size: 0.6em;
+    font-size: 0.5em;
     position: fixed;
-    bottom: 50%;
-    left: 8px;
+    top: 1%;
+    left: 3px;
   }
 
   #underConstr {
@@ -1193,23 +1196,35 @@
     }
   }
 
+  .wrap {
+    z-index: 0;
+    opacity: 0.5;
+    padding: 10px 5px;
+    /* background-color: rgba(221, 255, 56, 0.75); */
+    color: rgba(6, 70, 210, 1);
+    animation: float-Typewriter 1s ease-in-out infinite;
+    -webkit-animation: float-Typewriter 1s ease-in-out infinite;
+    -moz-animation: float-Typewriter 1s ease-in-out infinite;
+
+  }
+
   .typewrite {
     position: absolute;
     font-size: 0.75em;
-    z-index: 100;
-    color: rgba(0, 0, 0, 1);
+    /* z-index: 100; */
     top: 0px;
     left: 0px;
-    animation: float-Typewriter 2s ease-in-out infinite;
-    -webkit-animation: float-Typewriter 2s ease-in-out infinite;
-    -moz-animation: float-Typewriter 2s ease-in-out infinite;
   }
 
   @keyframes float-Typewriter {
     0% {
       transform: translate(0px, 0px);
     }
-    25% {
+
+    20% {
+      opacity: 0.65;
+    }
+    30% {
       opacity: 0.75;
     }
     50% {
@@ -1259,6 +1274,13 @@
     /* padding: 0px 50px; */
   }
 
+  .div-svg3 {
+    width: 25%;
+    margin: 0 auto;
+    padding: 0px;
+    align-items: center;
+  }
+
   .svg1 {
     display: block;
     margin: 0 auto;
@@ -1291,7 +1313,7 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 12px;
-    background-color: coral;
+    /* background: linear-gradient(to bottom right, rgba(133, 133, 133, 0.4), rgba(17, 212, 150, 0.3)); */
     padding: 10px;
   }
 
@@ -1300,7 +1322,7 @@
       display: grid;
       grid-template-columns: auto auto auto;
       grid-gap: 12px;
-      background-color: coral;
+      background-color: rgb(58, 240, 160);
       padding: 10px;
     }
   }
@@ -1308,9 +1330,11 @@
   .grid-item {
     opacity: 0;
     font-size: 12px;
-    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.15);
     text-align: center;
-    padding: 7px;
+    border: 2px solid red;
+    /* padding: 17px 26px; */
   }
 
   .gridAnimate {
@@ -1361,7 +1385,7 @@
     background: rgba(100, 10, 100, 0.1);
   }
 
-  #svg-Code1 {
+  #e1 {
     transform: translateX(-100px);
     animation: move-code1 linear 0.5s forwards;
   }
@@ -1419,6 +1443,106 @@
     width: 2%;
   }
 
+  .divAsButton {
+    padding: 8px 2px;
+    margin: 10px auto;
+    background-color: rgba(80, 200, 100, 1);
+    color: white;
+    font-weight: bold;
+    font-size: 1.25em;
+    border-radius: 6px;
+    width: 150px;
+  }
+
+  .divAsButton:hover {
+    background-color: rgba(30, 200, 80, 1);
+    text-shadow: 2px 2px 4px black;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+
   #dispositivo {
     position: absolute;
   }
+
+/* *********************** For the Modalds *********************** */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.closeModal {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+/* *********************** For the Modalds *********************** */

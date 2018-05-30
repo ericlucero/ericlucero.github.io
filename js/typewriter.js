@@ -5,16 +5,22 @@ window.onload = function() {
   changePosition();
   // elem =   document.getElementById("screenYposition");
   var elements = document.getElementsByClassName('typewrite');
-  for (var i = 0; i < elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-type');
-    var period = elements[i].getAttribute('data-period');
-    // if (toRotate) {
-    //   new TxtType(elements[i], JSON.parse(toRotate), period);
-    // }
-  }
-};
+  // var elementsTwo = document.getElementsByClassName('typewriteTwo');
+console.log("elements.length = " + elements.length);
+  createObjectTypewriter(elements);
+  // createObjectTypewriter(elementsTwo);
 
-// window.addEventListener("resize", displayWindowSize);
+  function createObjectTypewriter(elemento) {
+    for (var i = 0; i < elemento.length; i++) {
+      var toRotate = elemento[i].getAttribute('data-type');
+      var period = elemento[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtType(elemento[i], JSON.parse(toRotate), period);
+      }
+    }
+  }
+
+};
 
 function displayWindowSize() {
   // your size calculation code here
@@ -25,7 +31,6 @@ function displayWindowSize() {
 };
 
 function changePosition() {
-
   var writer = document.getElementsByClassName('typewrite');
   for (var i = 0; i < writer.length; i++) {
     var randiTop = Math.random() * (window.innerHeight);
@@ -53,18 +58,16 @@ TxtType.prototype.tick = function() {
   if (this.isDeleting) {
     this.txt = fullTxt.substring(0, this.txt.length - 1);
   } else {
-
     this.txt = fullTxt.substring(0, this.txt.length + 1);
-
   }
 
   this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
   var that = this;
-  var delta = 200 - Math.random() * 100;
+  var delta = 66 - Math.random() * 100;
 
   if (this.isDeleting) {
-    delta /= 2;
+    delta /= 5000;
   }
 
   if (!this.isDeleting && this.txt === fullTxt) {
@@ -75,7 +78,7 @@ TxtType.prototype.tick = function() {
     changePosition();
     this.isDeleting = false;
     this.loopNum++;
-    delta = 1000;
+    delta = 1;
   }
 
   setTimeout(function() {
@@ -83,7 +86,7 @@ TxtType.prototype.tick = function() {
   }, delta);
 
   function changePosition() {
-    var randiTop = Math.random() * (window.innerHeight);
+    var randiTop = Math.random() * (window.innerHeight - 20);
     var randiLeft = Math.random() * (window.innerWidth - 60);
     var writer = document.getElementById('typewrt');
     writer.style.top = randiTop.toString() + 'px';
